@@ -1,0 +1,49 @@
+{
+    "nav_opt_unAuth" : [
+        {
+            "name" : "Home",
+            "route" : "/home"
+        },
+        {
+            "name" : "Courses",
+            "route" : "/courses",
+            "isSubMenu" : true
+        },
+        {
+            "name" : "Tutors",
+            "route" : "/tutors",
+            "isSubMenu" : true
+        },
+        {
+            "name" : "Resources",
+            "route" : "/resources",
+            "isSubMenu" : true
+        },
+        {
+            "name" : "Pricing",
+            "route" : "/pricing"
+        }
+    ],
+    "nav_opt_auth" : [
+        {
+            "name" : "Home",
+            "route" : "/home"
+        },
+        {
+            "name" : "About Us",
+            "route" : "/about-us"
+        },
+        {
+            "name" : "Courses",
+            "route" : "/courses"
+        },
+        {
+            "name" : "Blog",
+            "route" : "/blog"
+        },
+        {
+            "name" : "Contact us",
+            "route" : "/cottact-us"
+        }
+    ]
+}
