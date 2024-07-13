@@ -10,7 +10,7 @@ const BlueBgButton = ({
   return (
     <div>
       <button
-        className=" blue-btn rounded-lg text-white text-xs"
+        className=" blue-btn rounded-lg text-white text-sm p-3 "
         onClick={handleClick}
       >
         {text}

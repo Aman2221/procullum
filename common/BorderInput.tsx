@@ -14,7 +14,7 @@ const BorderInput = ({
       <label className="capitalize text-base" htmlFor={name}>
         {name}
       </label>
-      <div className="input-div rounded-lg">
+      <div className="input-div rounded-lg border border-gray-400 p-3">
         <input
           type={type}
           placeholder={placeholder}
