@@ -7,17 +7,56 @@
         {
             "name" : "Courses",
             "route" : "/courses",
-            "isSubMenu" : true
+            "isSubMenu" : true,
+            "sub_options" : [{
+                    "name" : "One",
+                    "route" : "/one"
+                },
+                {
+                    "name" : "Two",
+                "route" : "/two"
+                },
+                {
+                    "name" : "Three",
+                    "route" : "/three"
+                }        
+            ]
         },
         {
             "name" : "Tutors",
             "route" : "/tutors",
-            "isSubMenu" : true
+            "isSubMenu" : true,
+            "sub_options" :[{
+                    "name" : "One",
+                    "route" : "/one"
+                },
+                {
+                    "name" : "Two",
+                "route" : "/two"
+                },
+                {
+                    "name" : "Three",
+                    "route" : "/three"
+                }        
+            ]
         },
         {
             "name" : "Resources",
             "route" : "/resources",
-            "isSubMenu" : true
+            "isSubMenu" : true,
+            "sub_options" : [{
+                    "name" : "One",
+                    "route" : "/one"
+                },
+                {
+                    "name" : "Two",
+                "route" : "/two"
+                },
+                {
+                    "name" : "Three",
+                    "route" : "/three"
+                }        
+            ]
         },
         {
             "name" : "Pricing",
