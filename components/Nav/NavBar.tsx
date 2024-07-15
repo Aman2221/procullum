@@ -34,8 +34,8 @@ const NavBar = ({ showMenuAndButtons }: { showMenuAndButtons: boolean }) => {
   }, []);
 
   return (
-    <div className="py-3">
-      <div className="flex justify-between items-center font-inter">
+    <div className="py-3 shadow fixed w-full left-0 ">
+      <div className="flex justify-between items-center font-inter container mx-auto">
         <Image src={logoSvgPath} alt="logo" height={100} width={200} />
         {showMenuAndButtons ? (
           <>

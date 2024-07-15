@@ -16,7 +16,7 @@ const Layout = ({
 }) => {
   return (
     <>
-      {showNav ? <NavBar /> : <></>}
+      {showNav ? <NavBar showMenuAndButtons={false} /> : <></>}
       <div className="container m-auto">{children}</div>
       {showFooter ? <Footer /> : <></>}
       <ToastContainer />

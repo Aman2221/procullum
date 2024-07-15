@@ -11,16 +11,17 @@ const BorderInput = ({
 }) => {
   return (
     <div>
-      <label className="capitalize text-base" htmlFor={name}>
+      <label className="capitalize text-sm" htmlFor={name}>
         {name}
       </label>
-      <div className="input-div rounded-lg border border-gray-400 p-3">
+      <div className="input-div rounded-lg border border-gray-400 p-3 mt-3">
         <input
           type={type}
           placeholder={placeholder}
           name={name}
           className="outline-none text-sm"
         />
+        <button></button>
       </div>
     </div>
   );

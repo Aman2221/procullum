@@ -84,5 +84,38 @@
             "name" : "Contact us",
             "route" : "/cottact-us"
         }
+    ],
+    "sign_in_buttons" : [
+        {
+            "name" : "google",
+            "img_url" : "/sign-in/google.svg"
+        },
+        {
+            "name" : "facebook",
+            "img_url" : "/sign-in/facebook.svg"
+        },
+        {
+            "name" : "github",
+            "img_url" : "/sign-in/github.svg"
+        },
+        {
+            "name" : "linkedin",
+            "img_url" : "/sign-in/linkedin.svg"
+        },{
+            "name" : "apple",
+            "img_url" : "/sign-in/apple.svg"
+        }
+    ],
+    "sign_in_feilds" : [
+        {
+            "placeholder" :"Username or email address",
+            "name":"Enter your username or email address",
+            "type" : "email"
+        },
+        {
+            "placeholder" :"Enter your Password",
+            "name":"Password",
+            "type" : "password"
+        }
     ]
 }
