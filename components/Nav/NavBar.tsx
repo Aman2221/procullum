@@ -34,7 +34,7 @@ const NavBar = ({ showMenuAndButtons }: { showMenuAndButtons: boolean }) => {
   }, []);
 
   return (
-    <div className="py-3 shadow fixed w-full left-0 ">
+    <div className="py-3 shadow fixed w-full left-0 bg-white z-10 top-0">
       <div className="flex justify-between items-center font-inter container mx-auto">
         <Image src={logoSvgPath} alt="logo" height={100} width={200} />
         {showMenuAndButtons ? (
@@ -51,13 +51,13 @@ const NavBar = ({ showMenuAndButtons }: { showMenuAndButtons: boolean }) => {
 
             <div className="flex items-center gap-10">
               <LinkButton
-                buttonText="Sign in"
-                onClick={() => router.push("/")}
+                text="Sign in"
+                href="/sign-in"
                 extrClss="blue-color"
               />
               <LinkButton
-                buttonText="Sign up"
-                onClick={() => router.push("/")}
+                text="Sign up"
+                href="/sign-up"
                 extrClss="text-white green-bg rounded-lg px-6"
               />
             </div>

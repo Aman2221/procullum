@@ -1,21 +1,25 @@
+import Link from "next/link";
 import React from "react";
 
 const LinkButton = ({
-  buttonText,
-  onClick,
-  extrClss,
+  text = "Button",
+  extrClss = "",
+  handleClick,
+  href = "/",
 }: {
-  buttonText: string;
-  onClick: () => void;
+  text?: string;
+  handleClick?: () => void;
   extrClss?: string;
+  href?: string;
 }) => {
   return (
-    <button
-      onClick={onClick}
-      className={`border-none outline-none  px-4 py-3 ${extrClss}`}
+    <Link
+      href={href}
+      onClick={handleClick}
+      className={`border-none outline-none px-4 py-3 flex-center ${extrClss}`}
     >
-      {buttonText}
-    </button>
+      {text}
+    </Link>
   );
 };
 

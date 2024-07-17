@@ -4,7 +4,7 @@ import React from "react";
 
 const SignIn = () => {
   return (
-    <Layout>
+    <Layout showAuthFooter={true} showNav={true} isFooterAbs={true}>
       <SignInPg />
     </Layout>
   );

@@ -5,14 +5,14 @@ import Image from "next/image";
 import Link from "next/link";
 import data from "@/json/index.json";
 
-const SignInPg = () => {
+const SignUpPg = () => {
   return (
     <div className="font-poppins font-inter">
       <div className="flex-center">
-        <div className="grid grid-cols-2 items-center gap-20">
+        <div className="grid grid-cols-2 items-center gap-20 ">
           <div className="flex-center w-full">
             <Image
-              src="/img/sign-in.png"
+              src="/img/sign-up.png"
               alt="sign in"
               height={600}
               width={600}
@@ -25,9 +25,9 @@ const SignInPg = () => {
                 Welocome to <span className="blue-color">Procullum</span>
               </h3>
               <div className="flex flex-col">
-                <span className="text-gray-400 text-sm">No Account ?</span>
-                <Link className="text-sm blue-color" href="/sign-up">
-                  Sign Up
+                <span className="text-gray-400 text-sm">Have an Account ?</span>
+                <Link className="text-sm blue-color" href="/sign-in">
+                  Sign in
                 </Link>
               </div>
             </div>
@@ -50,16 +50,37 @@ const SignInPg = () => {
               <p className={`mb-0 text-center font-normal`}>Or sign in with</p>
               <span className="flex-1 border border-slate-200 w-full ml-1"></span>
             </div>
-            <div className="flex flex-col gap-6">
-              {data.sign_in_feilds.map((item) => (
-                <div key={item.name}>
-                  <BorderInput
-                    placeholder={item.placeholder}
-                    name={item.name}
-                    type={item.type}
-                  />
-                </div>
-              ))}
+            <div className="flex gap-6 ">
+              {data.sign_up_feilds
+                .filter(
+                  (item) =>
+                    item.name == "Phone_number" || item.name == "User_name"
+                )
+                .map((item) => (
+                  <div key={item.name}>
+                    <BorderInput
+                      placeholder={item.placeholder}
+                      name={item.name.replace("_", " ")}
+                      type={item.type}
+                    />
+                  </div>
+                ))}
+            </div>
+            <div className="flex flex-col gap-6 mt-6">
+              {data.sign_up_feilds
+                .filter(
+                  (item) =>
+                    item.name !== "Phone_number" && item.name !== "User_name"
+                )
+                .map((item) => (
+                  <div key={item.name}>
+                    <BorderInput
+                      placeholder={item.placeholder}
+                      name={item.name.replace("_", " ")}
+                      type={item.type}
+                    />
+                  </div>
+                ))}
             </div>
             <div className="flex justify-between items-center">
               <div className="flex justify-start gap-2 items-center">
@@ -83,4 +104,4 @@ const SignInPg = () => {
   );
 };
 
-export default SignInPg;
+export default SignUpPg;

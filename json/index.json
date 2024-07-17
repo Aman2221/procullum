@@ -109,12 +109,46 @@
     "sign_in_feilds" : [
         {
             "placeholder" :"Username or email address",
-            "name":"Enter your username or email address",
+            "label":"Enter your username or email address",
+            "type" : "email",
+            "name" : "email"
+        },
+        {
+            "placeholder" :"Enter your Password",
+            "label":"Password",
+            "name" : "Password",
+            "type" : "password"
+        }
+    ],
+    "sign_up_feilds" : [
+        {
+            "placeholder" :"Enter your name",
+            "name" : "user_name",
+            "label":"User name",
+            "type" : "text"
+        },
+        {
+            "placeholder" :"Enter your phone number",
+            "name":"phone_number",
+            "label" :"Phone number",
+            "type" : "tel"
+        },
+        {
+            "placeholder" :"Username or email address",
+            "label":"Enter your username or email address",
+            "name" :"email",
             "type" : "email"
         },
         {
             "placeholder" :"Enter your Password",
             "name":"Password",
+            "label":"Password",
+            "type" : "password"
+        },
+        {
+            "placeholder" :"Confirm Password",
+            "label":"Confirm password",
+            "name":"confirm_password",
             "type" : "password"
         }
     ]
