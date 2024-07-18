@@ -151,5 +151,27 @@
             "name":"confirm_password",
             "type" : "password"
         }
+    ],
+    "home_features" : [
+        {
+            "heading" : "1k Online Courses",
+            "description" :"Procullum is a cutting-edge SaaS learning platform",
+            "icon" : "bx-time"
+        },
+        {
+            "heading" : "28+ Tutors",
+            "description" :"Procullum is a cutting-edge SaaS learning platform",
+            "icon" : "bx-briefcase"
+        },
+        {
+            "heading" : "1k certified courses",
+            "description" :"Procullum is a cutting-edge SaaS learning platform",
+            "icon" : "bx-line-chart-down"
+        },
+        {
+            "heading" : "8k online students",
+            "description" :"Procullum is a cutting-edge SaaS learning platform",
+            "icon" : "bx-shield-alt-2"
+        }
     ]
 }

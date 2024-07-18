@@ -16,7 +16,7 @@ const LinkButton = ({
     <Link
       href={href}
       onClick={handleClick}
-      className={`border-none outline-none px-4 py-3 flex-center ${extrClss}`}
+      className={`flex-center ${extrClss}`}
     >
       {text}
     </Link>

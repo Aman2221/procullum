@@ -12,16 +12,18 @@ const Layout = ({
   showNav = false,
   showAuthFooter = false,
   isFooterAbs = false,
+  isAuth = false,
 }: {
   children?: React.ReactNode;
   showFooter?: boolean;
   showNav?: boolean;
   showAuthFooter?: boolean;
   isFooterAbs?: boolean;
+  isAuth?: boolean;
 }) => {
   return (
     <>
-      {showNav ? <NavBar showMenuAndButtons={false} /> : <></>}
+      {showNav ? <NavBar showMenuAndButtons={isAuth} /> : <></>}
       <div
         className={`${showNav ? "mt-32" : ""} ${
           showFooter || showAuthFooter ? "mb-14" : ""

@@ -6,7 +6,7 @@ import LinkButton from "@/common/LinkButton";
 
 const CheckMailPg = () => {
   return (
-    <div className="font-poppins font-inter">
+    <div className="font-poppins">
       <div className="flex-center">
         <div className="grid grid-cols-2 items-center gap-20 ">
           <div className="flex-center w-full">
@@ -35,7 +35,7 @@ const CheckMailPg = () => {
               <LinkButton
                 href="/sign-in"
                 text="Back to login"
-                extrClss="text-base text-semibold mt-4 w-full"
+                extrClss="text-base text-semibold mt-10 w-full"
               />
             </div>
           </div>

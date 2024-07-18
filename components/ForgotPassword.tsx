@@ -6,7 +6,7 @@ import LinkButton from "@/common/LinkButton";
 
 const ForgotPassword = () => {
   return (
-    <div className="font-poppins font-inter">
+    <div className="font-poppins">
       <div className="flex-center">
         <div className="grid grid-cols-2 items-center gap-20 ">
           <div className="flex-center w-full">

@@ -3,14 +3,17 @@ import { logoSvgPath } from "@/common/index";
 import Image from "next/image";
 import React, { useState, useRef, useEffect } from "react";
 import LinkButton from "@/common/LinkButton";
-import { useRouter } from "next/navigation";
 import NotAuthNav from "./NotAuthNav";
 import AuthNav from "./AuthNav";
 
-const NavBar = ({ showMenuAndButtons }: { showMenuAndButtons: boolean }) => {
-  const router = useRouter();
+const NavBar = ({
+  showMenuAndButtons,
+  isAuth = false,
+}: {
+  showMenuAndButtons: boolean;
+  isAuth?: boolean;
+}) => {
   const [selectedMenu, setSectedMenu] = useState("");
-  const [isAuth, setIsAuth] = useState(false);
   const sidebarRef = useRef<HTMLDivElement>(null);
 
   const onMenuClick = (name: string) => {
@@ -58,7 +61,7 @@ const NavBar = ({ showMenuAndButtons }: { showMenuAndButtons: boolean }) => {
               <LinkButton
                 text="Sign up"
                 href="/sign-up"
-                extrClss="text-white green-bg rounded-lg px-6"
+                extrClss="text-white green-bg rounded-lg px-6 py-3"
               />
             </div>
           </>
